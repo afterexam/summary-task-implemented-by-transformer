@@ -2,7 +2,7 @@ from pathlib import Path
 config = {
 # 训练相关
         "batch_size":32,
-        "num_epochs":100,
+        "num_epochs":101,
         'lr':3e-4,
         "grad_clip": 1.0,
         # "warmup_steps": 8000,     # 学习率预热步数
@@ -49,3 +49,4 @@ def get_best_file_path(save=False):
 if __name__ =="__main__":
         a = get_best_file_path()
         print(a)
+        print(64*12)
